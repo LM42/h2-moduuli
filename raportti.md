@@ -38,3 +38,4 @@ file { "/var/www/html/index.html":
         
 http://terokarvinen.com/2016/publish-your-project-with-github
 http://terokarvinen.com/2017/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-2-%E2%80%93-5-op-uusi-ops-loppukevat-2017-p2
+https://joonaleppalahti.wordpress.com/2016/10/24/palvelinten-hallinta-harjoitus-1/
