@@ -12,6 +12,7 @@ https://joonaleppalahti.wordpress.com/2016/10/24/palvelinten-hallinta-harjoitus-
 Apache asentui koneelle. 
 
 Apachen asentumisen jälkeen tein file osion, joka muuttaa apache oletussivun. Koodin muutoksen jälkeen ajoin moduulin komennolla vielä kerran sudo puppet apply -e 'class{apaconf}'.
+![lopputulos](https://cloud.githubusercontent.com/assets/26084772/24906618/f7ca7820-1ea7-11e7-9c3e-874dfa72e225.png)
 
 ## Koodi
 ``` ruby
