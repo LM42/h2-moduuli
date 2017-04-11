@@ -14,6 +14,7 @@ Apache asentui koneelle.
 Apachen asentumisen jälkeen tein file osion, joka muuttaa apache oletussivun. Koodin muutoksen jälkeen ajoin moduulin komennolla vielä kerran sudo puppet apply -e 'class{apaconf}'.
 
 ## Koodi
+``` ruby
 class apaconf {
  package { apache2:
  ensure => "installed",
@@ -31,7 +32,7 @@ file { "/var/www/html/index.html":
  enable => "true",
  }
 }
-
+```
 # Lähteet
         
 http://terokarvinen.com/2016/publish-your-project-with-github
