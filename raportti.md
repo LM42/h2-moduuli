@@ -12,4 +12,27 @@ https://joonaleppalahti.wordpress.com/2016/10/24/palvelinten-hallinta-harjoitus-
 Apache asentui koneelle. 
 
 Apachen asentumisen jälkeen tein file osion, joka muuttaa apache oletussivun. Koodin muutoksen jälkeen ajoin moduulin komennolla vielä kerran sudo puppet apply -e 'class{apaconf}'.
+
+## Koodi
+class apaconf {
+ package { apache2:
+ ensure => "installed",
+ allowcdrom => 'true',
+
+ }
+
+file { "/var/www/html/index.html":
+ content => "Hei Maailma\n",
+ }
+ 
+
+ service { "apache2":
+ ensure => "running",
+ enable => "true",
+ }
+}
+
+# Lähteet
         
+http://terokarvinen.com/2016/publish-your-project-with-github
+http://terokarvinen.com/2017/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-2-%E2%80%93-5-op-uusi-ops-loppukevat-2017-p2
